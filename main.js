@@ -1,5 +1,3 @@
-import * as THREE from "three";
-
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xababab)
 const camera = new THREE.PerspectiveCamera(
@@ -11,6 +9,7 @@ const camera = new THREE.PerspectiveCamera(
 
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
+console.log(document.body);
 document.body.appendChild(renderer.domElement);
 
 const geometry = new THREE.BoxGeometry(1, 1, 1);
